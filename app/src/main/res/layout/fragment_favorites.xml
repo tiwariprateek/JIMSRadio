@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/coolbg"
+    android:layout_height="match_parent"
+    tools:context="org.jimsd.jimsradioapp.FavoritesFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:id="@+id/fav_frag_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favourite programs:"
+        android:textColor="#fff"
+        android:textSize="20dp"
+       />
+    <ProgressBar
+        android:id="@+id/progbar_fav_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/list_fav_prog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#2125ff"
+        android:dividerHeight="2dp"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coolbg"
+    tools:context="org.jimsd.jimsradioapp.ProgramSelector"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_prog_frag"
+        android:text="Select a Radio program "
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@color/colorAccent"
+        android:textAlignment="center"
+/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort:"
+            android:textAlignment="textEnd"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/sp_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progbar_prog_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ListView
+        android:id="@+id/list_prog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:dividerHeight="2dp"
+        android:visibility="invisible"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="#1b38b9"/>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ContactUs"
+    android:orientation="vertical"
+    android:background="@drawable/coolbg"
+    >
+
+    <TextView
+        android:id="@+id/cuhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="15dp"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+    <TextView
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Jagannath International Management School"
+        />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Community Radio JIMS 90.4 Mhz Vasant kunj"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="OCF Pocket 9 Sector B, Vasant Kunj, New Delhi - 110070 "
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Phone No. 011-40619300, 40619357"
+        android:layout_marginTop="3dp"
+        />
+       <TextView
+           android:textSize="18dp"
+           android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Email: crjimsvk@jagannath.org"
+        android:layout_marginTop="3dp"
+        />
+
+
+</LinearLayout>

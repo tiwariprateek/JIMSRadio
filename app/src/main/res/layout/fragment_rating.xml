@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coolbg"
+    tools:context="org.jimsd.jimsradioapp.RatingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rating"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+    <!--rating stars-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/btn_1_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_fav" />
+        <ImageView
+            android:id="@+id/btn_2_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_fav"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/btn_3_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_fav"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/btn_4_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_fav"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/btn_5_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_fav"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_rating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Your Rating: "
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please provide following information"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:background="@drawable/backgrund_edt"
+        android:id="@+id/edt_add_rating_name"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:hint="Enter name"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="50"/>
+
+    <EditText
+        android:id="@+id/edt_add_rating_email"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:background="@drawable/backgrund_edt"
+        android:hint="Enter email"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLength="256"/>
+
+    <Button
+        android:id="@+id/btn_submit_rating"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Rating"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="org.jimsd.jimsradioapp.ShowSelector"
+    android:background="@drawable/coolbg"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/txt_show_frag"
+        android:text="Select a Radio show"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@color/colorAccent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progbar_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <ListView
+        android:padding="3dp"
+        android:id="@+id/list_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:dividerHeight="3dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="#a3a5e9" />
+
+</LinearLayout>
